@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:ignore="MissingClass">
+
+    <com.aniket.userdemo.userprofile.RoundImagedesign
+        android:id="@+id/udp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/uname"
+        app:srcCompat="@drawable/ic_person_dp_24dx"
+        />
+
+
+<!--<com.aniket.userdemo.userprofile.RoundImagedesign-->
+
+<!--    android:id="@+id/udp"-->
+<!--    android:layout_width="64dp"-->
+<!--    android:layout_height="64dp"-->
+<!--    android:layout_marginStart="16dp"-->
+<!--    app:layout_constraintDimensionRatio="H,1:1"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toTopOf="@+id/uname"-->
+<!--    app:srcCompat="@drawable/ic_person_dp_24dx" />-->
+
+
+
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/uname"-->
+<!--        android:textSize="16dp"-->
+<!--        android:textColor="#000"-->
+<!--        android:singleLine="true"-->
+<!--        android:ellipsize="marquee"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintLeft_toRightOf="@+id/udp"-->
+<!--        app:layout_constraintRight_toRightOf="parent"  />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/ubatches"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/uname"-->
+<!--        app:layout_constraintLeft_toRightOf="@+id/udp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:ellipsize="marquee"-->
+<!--        android:singleLine="true" />-->
+
+
+
+
+    <TextView
+        android:id="@+id/uname"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_marginStart="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/udp"
+        app:layout_constraintRight_toLeftOf="@+id/cb_users"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/ubatches"
+        android:layout_marginStart="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/uname"
+        app:layout_constraintLeft_toRightOf="@+id/udp"
+        app:layout_constraintRight_toLeftOf="@+id/cb_users"
+        android:ellipsize="marquee"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/ucategory"
+        android:layout_marginStart="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ubatches"
+        app:layout_constraintLeft_toRightOf="@+id/udp"
+        app:layout_constraintRight_toLeftOf="@+id/cb_users"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:singleLine="true"
+        android:ellipsize="marquee" />
+
+    <CheckBox
+        android:clickable="false"
+        android:id="@+id/cb_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/uname"
+        app:layout_constraintBottom_toBottomOf="@+id/ucategory"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

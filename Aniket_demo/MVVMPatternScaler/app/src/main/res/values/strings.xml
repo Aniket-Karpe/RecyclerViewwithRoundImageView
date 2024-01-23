@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MVVM Pattern Scaler</string>
+    <string name="heading">MVVM Architecture</string>
+    <string name="email_hint">Email-ID</string>
+    <string name="password_hint">Password</string>
+    <string name="button_text">Sign-In</string>
+</resources>
